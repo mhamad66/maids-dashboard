@@ -30,10 +30,8 @@ To get started with the dashboard, follow these steps:
 ```bash
 git clone https://github.com/mhamad66/maids-dashboard.git
 
-```bash
 npm install
 
-```bash
 npm start
 
 The dashboard should now be running locally at http://localhost:4200!
