@@ -27,8 +27,8 @@ Take a look at the dashboard in action:
 To get started with the dashboard, follow these steps:
 
 1. **Clone the repository**:
-   ```bash git clone https://github.com/mhamad66/maids-dashboard.git
-
+```bash
+   git clone https://github.com/mhamad66/maids-dashboard.git
 2. npm install
 
 3. npm start
