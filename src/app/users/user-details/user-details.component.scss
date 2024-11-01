@@ -1,0 +1,46 @@
+@import "../../../styles/variables";
+
+.user-details-container {
+  padding: 10px;
+}
+
+.user-details-container .back-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.user-details-container .user-details {
+ margin-top: 50px;
+  position: relative;
+  width: fit-content;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+  }
+
+  .user-info {
+    line-height: 2;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user-details-container .user-details {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}

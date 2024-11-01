@@ -1,0 +1,11 @@
+<div class="user-details-container">
+  <button (click)="goBack()" class="back-btn">Back To Users</button>
+  <div *ngIf="user" class="user-details">
+    <img src="{{user.avatar}}" alt=""/>
+    <div class="user-info">
+      <p><span>First Name : </span>{{ user.first_name }}</p>
+      <p><span>Last Name : </span>{{ user.last_name }}</p>
+      <p><span>Email : </span>{{ user.email }}</p>
+    </div>
+  </div>
+</div>

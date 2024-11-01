@@ -1,0 +1,26 @@
+<div class="search-container">
+  <input type="text" pInputText [(ngModel)]="searchText" placeholder="Search By ID"
+         (ngModelChange)="onSearchChange($event)"/>
+</div>
+
+<section class="users-list-container">
+  <h2>Users List</h2>
+  <div class="users-list">
+    <div class="user-card" *ngFor="let user of users" (click)="onUserClick(user)">
+      <div class="card-image">
+        <img [src]="user.avatar" alt="User Avatar">
+      </div>
+      <div class="user-content">
+        <p>{{ user.first_name }} {{ user.last_name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <p-paginator
+    class="paginator"
+    (onPageChange)="onPageChange($event)"
+    [first]="0"
+    [rows]="10"
+    [totalRecords]="totalRecords"
+    [rowsPerPageOptions]="[10, 20, 30]"/>
+</section>

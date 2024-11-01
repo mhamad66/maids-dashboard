@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+.home-container{
+  width: 100%;
+}
+.home-container .cards-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+
+  .card {
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-small;
+    min-height: 220px;
+    width: 25%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.2);
+      filter: blur(2px);
+    }
+
+    .icons-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5rem;
+      color: $light-effect;
+
+      & i:first-child {
+        border: 1px solid $border-color;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #FFF;
+      }
+    }
+
+    .content-container {
+      line-height: 1.5;
+
+      h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span.increase {
+          font-size: 0.8rem;
+          color: #FFF;
+          padding: 5px 10px;
+          border-radius: $border-radius-large;
+          background-color: $light-effect;
+        }
+
+        span.decrease {
+          font-size: 0.8rem;
+          color: #FFF;
+          padding: 5px 10px;
+          border-radius: $border-radius-large;
+          background-color: rgba(255, 0, 0, 0.86);
+        }
+      }
+
+      & p:last-child {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.home-container .chart-table-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  * {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container .cards-container {
+    flex-wrap: wrap;
+
+    .card {
+      width: 100%;
+    }
+  }
+  .home-container .chart-table-container {
+    flex-wrap: wrap;
+
+    * {
+      flex-basis: 100%;
+    }
+  }
+}

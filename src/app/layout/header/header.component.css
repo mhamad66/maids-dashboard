@@ -1,0 +1,15 @@
+.header-container {
+  width: 100%;
+}
+.header-container input {
+  width: 20%;
+  padding: 10px;
+  background-color: rgba(68, 103, 118, 0.7);
+  color: #FFF;
+  border-radius: 8px;
+}
+.header-container input::placeholder {
+  color: #FFF;
+}
+
+/*# sourceMappingURL=header.component.css.map */

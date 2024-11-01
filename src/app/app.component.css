@@ -1,0 +1,26 @@
+.main-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-color: #374953;
+  color: #FFF;
+}
+
+.sidebar-container {
+  width: 5%;
+  min-width: 76px;
+  background-image: url("../assets/images/subtle-prism.svg");
+  background-size: cover;
+  position: relative;
+  border-radius: 16px;
+}
+
+.workspace-container {
+  width: 95%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=app.component.css.map */

@@ -1,0 +1,95 @@
+@import '../../../styles/_variables.scss';
+
+.sidebar {
+  padding: 20px 10px;
+  position: relative;
+  height: 100%;
+  border-right: 0.5px solid $border-color;
+  z-index: 1;
+}
+
+
+.sidebar .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 10px;
+
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+.sidebar .items-container {
+  .items-list {
+    margin-top: 10px;
+    gap: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  li {
+    padding: 0 15px;
+    list-style: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      cursor: pointer;
+      border-left: 2px solid #333;
+    }
+  }
+}
+
+.notifications-profile-container {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  .notifications-container {
+    font-size: 1.8rem;
+    border: 1px solid #FFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 4px $border-color;
+    }
+  }
+
+  .profile-container {
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &:hover {
+      box-shadow: 0 0 4px $border-color;
+    }
+  }
+}

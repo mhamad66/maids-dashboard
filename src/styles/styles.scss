@@ -1,6 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  --ng-progress-color: #22735b;
+  --ng-progress-thickness: 4
+}
+
+body {
+  background: $background-gradient;
 }

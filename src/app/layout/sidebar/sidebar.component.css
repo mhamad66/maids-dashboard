@@ -1,0 +1,71 @@
+.sidebar {
+  padding: 20px 10px;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+.sidebar .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 10px;
+}
+.sidebar .logo-container i {
+  font-size: 1.2rem;
+}
+
+.sidebar .items-container .items-list {
+  margin-top: 10px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sidebar .items-container li {
+  padding: 0 15px;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.sidebar .items-container li:hover {
+  cursor: pointer;
+  border-left: 2px solid #333;
+}
+
+.notifications-profile-container {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.notifications-profile-container .notifications-container {
+  font-size: 1.8rem;
+}
+.notifications-profile-container .profile-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.blur-effect {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  height: 100%;
+  background-color: rgba(68, 103, 118, 0.7);
+  filter: blur(2px);
+}
+
+/*# sourceMappingURL=sidebar.component.css.map */

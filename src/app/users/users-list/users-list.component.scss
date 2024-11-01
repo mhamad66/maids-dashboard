@@ -1,0 +1,85 @@
+@import '../../../styles/variables';
+
+.search-container {
+  width: 100%;
+  margin-bottom: 10px;
+
+  input {
+    border: 1px solid $border-color;
+    min-width: 240px;
+    padding: 10px;
+    color: $primary-color;
+    border-radius: $border-radius-small;
+
+
+  }
+}
+
+.users-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.users-list {
+  margin-top: 1rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+
+
+  .user-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+    position: relative;
+
+    .card-image {
+
+      img {
+        width: 80px;
+        border-radius: 50%;
+
+      }
+
+    }
+  }
+
+}
+
+::ng-deep .p-paginator {
+  width: fit-content;
+  margin: auto;
+
+  .p-paginator-rpp-options {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .users-list-container {
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 8px;
+  }
+  .users-list {
+    gap: 1rem;
+    justify-content: space-between;
+
+    .user-card {
+      min-width: 46%;
+    }
+  }
+  ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page {
+    min-width: 2rem;
+    height: 2rem;
+  }
+}
