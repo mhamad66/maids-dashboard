@@ -15,10 +15,10 @@ A user-friendly, customizable dashboard with a vibrant design, clean code, and f
 ## 📸 Dashboard Preview
 Take a look at the dashboard in action:
 
-![Dashboard Screenshot 1](path/to/image1.png)
-![Dashboard Screenshot 2](path/to/image2.png)
-![Dashboard Screenshot 3](path/to/image3.png)
-![Dashboard Screenshot 4](path/to/image4.png)
+![Dashboard - Desctop](src/assets/images/desktop-dashboard.png)
+![Dashboard Mobile](src/assets/images/mobile-dashboaed.png)
+![Dashboard Mobile](src/assets/images/mobile-users.png)
+![Dashboard Mobile](src/assets/images/mobile-details.png)
 
 ---
 
